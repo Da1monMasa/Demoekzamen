@@ -8,9 +8,14 @@
 <SolidColorBrush x:Key="MainPink" Color="#fed7c1"></SolidColorBrush>
 <SolidColorBrush x:Key="MainPurple" Color="#eed4fe"></SolidColorBrush>
 ```
-<br/>
-
-1.54.22 
+<br/> И дальше мы на них ссылаемся StaticResource и ключ цвета
+```
+<Style TargetType="Button" x:Key="BaseOliveButton">
+<Setter Property="Background" Value="{StaticResource MainOlive}"></Setter>
+<Setter Property="Height" Value="28"></Setter>
+</Style>
+```
+<br/> Изображение можно добавить просто перетаскиванием
 # Задание
 
 1. Разработать базу данных и проект с названием"CRUD", импортировать данные в базу данных, в проекте реализовать добавление данных, удаление данных, редактирование данных (можно свои примеры, можно из ресурсов клиентов или агентов)
